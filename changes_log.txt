@@ -1,0 +1,16 @@
+### Journal des Modifications
+
+1. **Création du fichier `.env.example`** :
+   - Un fichier `.env.example` a été créé pour servir de modèle de configuration.
+   - Le fichier contient des sections pour :
+     - **Bases de données** : SQLite, PostgreSQL, MongoDB
+     - **Configuration NextAuth.js** : URL et clé secrète, ainsi que des placeholders pour les providers d'authentification (GitHub, Google).
+     - **Internationalisation (i18n)** : Locale par défaut et locales disponibles.
+     - **Configuration générale** : Nom de l'application, URL de l'application, et environnement.
+     - **Configuration Email** : Paramètres SMTP optionnels.
+
+2. **Instructions d'utilisation** :
+   - Les utilisateurs doivent copier le fichier `.env.example` vers `.env` et remplir les valeurs appropriées pour leur environnement.
+   - Une commande pour générer une clé secrète pour `NEXTAUTH_SECRET` a été fournie.
+
+Cela garantit que tous les utilisateurs peuvent facilement configurer leur environnement de développement en fonction de leurs besoins spécifiques.
