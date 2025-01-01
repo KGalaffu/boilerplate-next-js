@@ -1,0 +1,129 @@
+{
+  "navigation": {
+    "home": "Home",
+    "login": "Login",
+    "register": "Register",
+    "admin": "Admin",
+    "logout": "Logout"
+  },
+  "home": {
+    "title": "Next.js Boilerplate",
+    "subtitle": "A modern starting point for your Next.js applications with:",
+    "features": {
+      "nextjs": "Next.js 14 with App Router",
+      "typescript": "TypeScript for static typing",
+      "tailwind": "Tailwind CSS for styling",
+      "shadcn": "Shadcn/ui for components",
+      "auth": "NextAuth.js for authentication",
+      "prisma": "Prisma as ORM",
+      "mysql": "MySQL as database"
+    },
+    "buttons": {
+      "docs": "Documentation",
+      "github": "GitHub"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "description": "Enter your email and password to login",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Login",
+      "success": "Successfully logged in!",
+      "error": "Invalid email or password"
+    },
+    "register": {
+      "title": "Register",
+      "description": "Create your account",
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Register",
+      "success": "Account created successfully!",
+      "error": "An error occurred during registration"
+    }
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "sessionInfo": "Session Information",
+    "users": {
+      "title": "Users Management",
+      "description": "Create, view, update and delete users",
+      "filter": {
+        "users": "Filter users..."
+      },
+      "create": {
+        "user": "Create User",
+        "description": "Add a new user to the system"
+      },
+      "edit": {
+        "user": "Edit User",
+        "description": "Modify user information"
+      },
+      "delete": {
+        "title": "Delete User",
+        "description": "Are you sure you want to delete {email}? This action cannot be undone."
+      },
+      "email": "Email",
+      "name": "Name",
+      "password": "Password",
+      "passwordPlaceholder": "Leave empty to keep current password",
+      "role": "Role",
+      "user": "User",
+      "admin": "Admin",
+      "creating": "Creating...",
+      "create": "Create",
+      "saving": "Saving...",
+      "save": "Save",
+      "deleting": "Deleting...",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "success": {
+        "create": "User created successfully",
+        "update": "User updated successfully",
+        "delete": "User deleted successfully"
+      },
+      "error": {
+        "create": "Failed to create user",
+        "update": "Failed to update user",
+        "delete": "Failed to delete user"
+      },
+      "row": {
+        "selected": "row(s) selected"
+      },
+      "rows": {
+        "perPage": "Rows per page"
+      },
+      "page": "Page",
+      "of": "of",
+      "first": {
+        "page": "Go to first page"
+      },
+      "previous": {
+        "page": "Go to previous page"
+      },
+      "next": {
+        "page": "Go to next page"
+      },
+      "last": {
+        "page": "Go to last page"
+      },
+      "view": "View",
+      "toggle": {
+        "columns": "Toggle columns"
+      },
+      "reset": "Reset",
+      "asc": "Asc",
+      "desc": "Desc",
+      "hide": "Hide"
+    }
+  },
+  "errors": {
+    "default": "Something went wrong!",
+    "auth": {
+      "credentials": "Invalid credentials",
+      "unauthorized": "Unauthorized access"
+    }
+  }
+}

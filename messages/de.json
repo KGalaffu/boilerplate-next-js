@@ -1,0 +1,129 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "admin": "Admin",
+    "logout": "Abmelden"
+  },
+  "home": {
+    "title": "Next.js Boilerplate",
+    "subtitle": "Ein moderner Ausgangspunkt für Ihre Next.js-Anwendungen mit:",
+    "features": {
+      "nextjs": "Next.js 14 mit App Router",
+      "typescript": "TypeScript für statische Typisierung",
+      "tailwind": "Tailwind CSS für Styling",
+      "shadcn": "Shadcn/ui für Komponenten",
+      "auth": "NextAuth.js für Authentifizierung",
+      "prisma": "Prisma als ORM",
+      "mysql": "MySQL als Datenbank"
+    },
+    "buttons": {
+      "docs": "Dokumentation",
+      "github": "GitHub"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Anmelden",
+      "description": "Geben Sie Ihre E-Mail und Ihr Passwort ein, um sich anzumelden",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "submit": "Anmelden",
+      "success": "Erfolgreich angemeldet!",
+      "error": "Ungültige E-Mail oder Passwort"
+    },
+    "register": {
+      "title": "Registrieren",
+      "description": "Erstellen Sie Ihr Konto",
+      "name": "Name",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "submit": "Registrieren",
+      "success": "Konto erfolgreich erstellt!",
+      "error": "Bei der Registrierung ist ein Fehler aufgetreten"
+    }
+  },
+  "admin": {
+    "title": "Admin-Dashboard",
+    "sessionInfo": "Sitzungsinformationen",
+    "users": {
+      "title": "Benutzerverwaltung",
+      "description": "Benutzer erstellen, anzeigen, aktualisieren und löschen",
+      "filter": {
+        "users": "Benutzer filtern..."
+      },
+      "create": {
+        "user": "Benutzer erstellen",
+        "description": "Einen neuen Benutzer zum System hinzufügen"
+      },
+      "edit": {
+        "user": "Benutzer bearbeiten",
+        "description": "Benutzerinformationen ändern"
+      },
+      "delete": {
+        "title": "Benutzer löschen",
+        "description": "Sind Sie sicher, dass Sie {email} löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden."
+      },
+      "email": "E-Mail",
+      "name": "Name",
+      "password": "Passwort",
+      "passwordPlaceholder": "Leer lassen, um aktuelles Passwort beizubehalten",
+      "role": "Rolle",
+      "user": "Benutzer",
+      "admin": "Admin",
+      "creating": "Erstellen...",
+      "create": "Erstellen",
+      "saving": "Speichern...",
+      "save": "Speichern",
+      "deleting": "Löschen...",
+      "delete": "Löschen",
+      "cancel": "Abbrechen",
+      "success": {
+        "create": "Benutzer erfolgreich erstellt",
+        "update": "Benutzer erfolgreich aktualisiert",
+        "delete": "Benutzer erfolgreich gelöscht"
+      },
+      "error": {
+        "create": "Fehler beim Erstellen des Benutzers",
+        "update": "Fehler beim Aktualisieren des Benutzers",
+        "delete": "Fehler beim Löschen des Benutzers"
+      },
+      "row": {
+        "selected": "Zeile(n) ausgewählt"
+      },
+      "rows": {
+        "perPage": "Zeilen pro Seite"
+      },
+      "page": "Seite",
+      "of": "von",
+      "first": {
+        "page": "Zur ersten Seite"
+      },
+      "previous": {
+        "page": "Zur vorherigen Seite"
+      },
+      "next": {
+        "page": "Zur nächsten Seite"
+      },
+      "last": {
+        "page": "Zur letzten Seite"
+      },
+      "view": "Ansicht",
+      "toggle": {
+        "columns": "Spalten umschalten"
+      },
+      "reset": "Zurücksetzen",
+      "asc": "Aufsteigend",
+      "desc": "Absteigend",
+      "hide": "Ausblenden"
+    }
+  },
+  "errors": {
+    "default": "Etwas ist schiefgelaufen!",
+    "auth": {
+      "credentials": "Ungültige Anmeldedaten",
+      "unauthorized": "Nicht autorisierter Zugriff"
+    }
+  }
+}

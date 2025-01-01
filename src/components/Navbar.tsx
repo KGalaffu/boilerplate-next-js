@@ -1,38 +1,64 @@
 "use client"
 
-import Link from 'next/link'
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { useSession } from "next-auth/react"
+import { useSession, signOut } from "next-auth/react"
+import { Link } from "../navigation"
+import { useTranslations } from 'next-intl'
+import LanguageSelector from './LanguageSelector'
 
 export default function Navbar() {
   const { data: session } = useSession()
+  const t = useTranslations('navigation')
 
   return (
-    <Card className="rounded-none border-b shadow-lg bg-gray-800">
-      <nav className="container mx-auto flex h-16 items-center px-4">
-        <div className="relative mr-4 flex items-center">
-          <span className="relative inline-block font-mono text-lg font-bold tracking-tight glitch-text text-white" data-text="Boilerplate Next.js v0.1.0">
-            Boilerplate Next.js v0.1.0
-          </span>
+    <nav className="bg-white shadow-lg">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex space-x-4">
+            <Link href="/" className="text-gray-700 hover:text-gray-900">
+              {t('home')}
+            </Link>
+          </div>
+
+          <div className="flex items-center space-x-4">
+            <LanguageSelector />
+            
+            {!session && (
+              <>
+                <Link
+                  href="/login"
+                  className="text-gray-700 hover:text-gray-900"
+                >
+                  {t('login')}
+                </Link>
+                <Link
+                  href="/register"
+                  className="text-gray-700 hover:text-gray-900"
+                >
+                  {t('register')}
+                </Link>
+              </>
+            )}
+
+            {session?.user?.role === "ADMIN" && (
+              <Link
+                href="/admin"
+                className="text-gray-700 hover:text-gray-900"
+              >
+                {t('admin')}
+              </Link>
+            )}
+
+            {session && (
+              <button
+                onClick={() => signOut()}
+                className="text-gray-700 hover:text-gray-900"
+              >
+                {t('logout')}
+              </button>
+            )}
+          </div>
         </div>
-        <div className="ml-auto flex items-center space-x-4">
-          <Button variant="ghost" className="text-white hover:text-gray-300" asChild>
-            <Link href="/">Accueil</Link>
-          </Button>
-          <Button variant="ghost" className="text-white hover:text-gray-300" asChild>
-            <Link href="/login">Connexion</Link>
-          </Button>
-          <Button variant="ghost" className="text-white hover:text-gray-300" asChild>
-            <Link href="/register">S'inscrire</Link>
-          </Button>
-          {session?.user?.role === 'admin' && (
-            <Button variant="ghost" className="text-white hover:text-gray-300" asChild>
-              <Link href="/admin">Admin</Link>
-            </Button>
-          )}
-        </div>
-      </nav>
-    </Card>
+      </div>
+    </nav>
   )
 }

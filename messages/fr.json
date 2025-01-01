@@ -1,0 +1,129 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "login": "Connexion",
+    "register": "Inscription",
+    "admin": "Admin",
+    "logout": "Déconnexion"
+  },
+  "home": {
+    "title": "Next.js Boilerplate",
+    "subtitle": "Un point de départ moderne pour vos applications Next.js avec :",
+    "features": {
+      "nextjs": "Next.js 14 avec App Router",
+      "typescript": "TypeScript pour le typage statique",
+      "tailwind": "Tailwind CSS pour le style",
+      "shadcn": "Shadcn/ui pour les composants",
+      "auth": "NextAuth.js pour l'authentification",
+      "prisma": "Prisma comme ORM",
+      "mysql": "MySQL comme base de données"
+    },
+    "buttons": {
+      "docs": "Documentation",
+      "github": "GitHub"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Connexion",
+      "description": "Entrez votre email et mot de passe pour vous connecter",
+      "email": "Email",
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "success": "Connexion réussie !",
+      "error": "Email ou mot de passe invalide"
+    },
+    "register": {
+      "title": "Inscription",
+      "description": "Créez votre compte",
+      "name": "Nom",
+      "email": "Email",
+      "password": "Mot de passe",
+      "submit": "S'inscrire",
+      "success": "Compte créé avec succès !",
+      "error": "Une erreur est survenue lors de l'inscription"
+    }
+  },
+  "admin": {
+    "title": "Tableau de bord Admin",
+    "sessionInfo": "Informations de session",
+    "users": {
+      "title": "Gestion des Utilisateurs",
+      "description": "Créer, voir, modifier et supprimer des utilisateurs",
+      "filter": {
+        "users": "Filtrer les utilisateurs..."
+      },
+      "create": {
+        "user": "Créer un Utilisateur",
+        "description": "Ajouter un nouvel utilisateur au système"
+      },
+      "edit": {
+        "user": "Modifier l'Utilisateur",
+        "description": "Modifier les informations de l'utilisateur"
+      },
+      "delete": {
+        "title": "Supprimer l'Utilisateur",
+        "description": "Êtes-vous sûr de vouloir supprimer {email} ? Cette action ne peut pas être annulée."
+      },
+      "email": "Email",
+      "name": "Nom",
+      "password": "Mot de passe",
+      "passwordPlaceholder": "Laissez vide pour garder le mot de passe actuel",
+      "role": "Rôle",
+      "user": "Utilisateur",
+      "admin": "Admin",
+      "creating": "Création...",
+      "create": "Créer",
+      "saving": "Enregistrement...",
+      "save": "Enregistrer",
+      "deleting": "Suppression...",
+      "delete": "Supprimer",
+      "cancel": "Annuler",
+      "success": {
+        "create": "Utilisateur créé avec succès",
+        "update": "Utilisateur mis à jour avec succès",
+        "delete": "Utilisateur supprimé avec succès"
+      },
+      "error": {
+        "create": "Échec de la création de l'utilisateur",
+        "update": "Échec de la mise à jour de l'utilisateur",
+        "delete": "Échec de la suppression de l'utilisateur"
+      },
+      "row": {
+        "selected": "ligne(s) sélectionnée(s)"
+      },
+      "rows": {
+        "perPage": "Lignes par page"
+      },
+      "page": "Page",
+      "of": "sur",
+      "first": {
+        "page": "Aller à la première page"
+      },
+      "previous": {
+        "page": "Aller à la page précédente"
+      },
+      "next": {
+        "page": "Aller à la page suivante"
+      },
+      "last": {
+        "page": "Aller à la dernière page"
+      },
+      "view": "Affichage",
+      "toggle": {
+        "columns": "Basculer les colonnes"
+      },
+      "reset": "Réinitialiser",
+      "asc": "Asc",
+      "desc": "Desc",
+      "hide": "Masquer"
+    }
+  },
+  "errors": {
+    "default": "Une erreur est survenue !",
+    "auth": {
+      "credentials": "Identifiants invalides",
+      "unauthorized": "Accès non autorisé"
+    }
+  }
+}

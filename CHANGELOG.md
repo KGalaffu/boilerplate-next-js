@@ -51,6 +51,45 @@ npx shadcn-ui@latest add toast
 ### Security
 - Implémentation de la vérification des rôles pour l'accès aux fonctionnalités admin
 
+## [0.3.0] - 2024-12-14
+
+### Added
+- Intégration complète de Next-intl pour l'internationalisation
+- Support des langues : Anglais (en), Français (fr) et Allemand (de)
+- Création des fichiers de traduction dans le dossier `messages/`
+- Ajout du sélecteur de langue dans la navbar
+- Routes dynamiques avec paramètre de locale `[locale]`
+
+### Changed
+- Refonte du middleware pour gérer l'authentification et l'internationalisation
+- Mise à jour du layout pour supporter les traductions côté client et serveur
+- Configuration des routes publiques avec gestion automatique des locales
+- Amélioration de la gestion des redirections avec préservation de la locale
+
+### Configuration
+- Création du fichier `i18n.config.ts` pour la configuration des locales
+- Configuration du middleware avec `localePrefix: 'as-needed'`
+- Mise en place des routes dynamiques avec `[locale]`
+- Configuration des chemins (pathnames) pour la navigation internationalisée
+
+### Technical Details
+- Utilisation de `getTranslations` pour les traductions côté serveur
+- Implémentation de `NextIntlClientProvider` pour les traductions côté client
+- Gestion des routes publiques et protégées avec support multilingue
+- Configuration du matcher pour le middleware Edge
+
+### Files Modified
+- `src/middleware.ts`: Gestion combinée de l'auth et i18n
+- `src/app/[locale]/layout.tsx`: Support des traductions
+- `src/config/i18n.config.ts`: Configuration des locales
+- `messages/*.json`: Fichiers de traduction
+- `src/components/Navbar.tsx`: Ajout du sélecteur de langue
+
+### Dependencies Added
+```bash
+npm install next-intl
+```
+
 ## [0.1.0] - 2024-12-14
 
 ### Added
